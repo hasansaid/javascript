@@ -1,1 +1,1 @@
-var isim = 'Hasan Said Sertkaya';
+console.log ('Hello World from app.js');
