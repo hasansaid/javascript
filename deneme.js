@@ -48,3 +48,10 @@ const diziyiKoplayaveIkiileCarp = dizi => {
 };
 
 diziyiKoplayaveIkiileCarp (myDizi);
+console.clear ();
+
+let sayilar = [1, 2, 3, 4, 5, 6];
+
+for (let i = 0; i < sayilar.length; i++) {
+  console.log (sayilar[i]);
+}
