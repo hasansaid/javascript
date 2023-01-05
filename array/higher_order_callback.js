@@ -1,50 +1,51 @@
-// let person = {
-//     ad: 'hasan',
-//     yas: 32,
-//     evliMi: false,
-// };
+let person = {
+  ad: 'hasan',
+  yas: 32,
+  evliMi: false,
+};
 
-// console.log(person.ad);
-// console.log(typeof person);
-// console.log(person instanceof Object);
+console.log (person.ad);
+console.log (typeof person);
+console.log (person instanceof Object);
 
-// let renkler = ['kırmızı'];
-// console.log(renkler[0]);
-// console.log(typeof renkler);
-// console.log(renkler instanceof Array);
-// console.log(renkler instanceof Object);
+let renkler = ['kırmızı'];
+console.log (renkler[0]);
+console.log (typeof renkler);
+console.log (renkler instanceof Array);
+console.log (renkler instanceof Object);
 
-// const fonksiyon = function () {
-//     console.log('merhaba dünya');
-// }
-// fonksiyon();
+const fonksiyon = function () {
+  console.log ('merhaba dünya');
+};
+fonksiyon ();
 
-// //fonksiyon.test = 'deneme bik bik';
+//fonksiyon.test = 'deneme bik bik';
 
-// console.log(typeof fonksiyon);
-// console.log(fonksiyon instanceof Object);
+console.log (typeof fonksiyon);
+console.log (fonksiyon instanceof Object);
 
-// //console.log(fonksiyon.test);
+//console.log(fonksiyon.test);
 
-// let sayi = 5;
+let sayi = 5;
 
-// const fonk = function (sayi) {
-//     sayi = sayi * 2;
-//     return sayi;
-// }
+const fonk = function (sayi) {
+  sayi = sayi * 2;
+  return sayi;
+};
 
-// console.log(fonk(sayi));
-// console.log(sayi);
+console.log (fonk (sayi));
+console.log (sayi);
 
-// let myDizi = [1, 2, 3];
-// const diziElemanlariniIkiyleCarp = function (dizi) {
-//     let geciciDizi = [];
-//     for (let i = 0; i < dizi.length; i++) {
-//         geciciDizi[i] = dizi[i] * 2;
-//     }
-//     return geciciDizi;
-// }
-// console.log("kopya dizi" + diziElemanlariniIkiyleCarp(myDizi));
+let my1Dizi = [1, 2, 3];
+const diziElemanlariniIkiyleCarp = function (dizi) {
+  let geciciDizi = [];
+  for (let i = 0; i < dizi.length; i++) {
+    geciciDizi[i] = dizi[i] * 2;
+  }
+  return geciciDizi;
+};
+console.log ('kopya dizi' + diziElemanlariniIkiyleCarp (my1Dizi));
+console.clear ();
 
 /*
 const diziyiKopyalaveIkiIleCarp = function (dizi) {
