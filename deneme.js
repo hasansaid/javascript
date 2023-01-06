@@ -37,21 +37,29 @@
 // console.log(typeof renkler)
 // console.log(renkler instanceof Array)
 
-let myDizi = [1, 2, 3];
+// let myDizi = [1, 2, 3];
 
-const diziyiKoplayaveIkiileCarp = dizi => {
-  let geciciDizi = [];
-  for (let i = 0; i < dizi.length; i++) {
-    geciciDizi[i] = dizi[i] * 2;
-  }
-  return console.log (geciciDizi);
-};
+// const diziyiKoplayaveIkiileCarp = dizi => {
+//   let geciciDizi = [];
+//   for (let i = 0; i < dizi.length; i++) {
+//     geciciDizi[i] = dizi[i] * 2;
+//   }
+//   return console.log (geciciDizi);
+// };
 
-diziyiKoplayaveIkiileCarp (myDizi);
-console.clear ();
+// diziyiKoplayaveIkiileCarp (myDizi);
+// console.clear ();
 
-let sayilar = [1, 2, 3, 4, 5, 6];
+// let sayilar = [1, 2, 3, 4, 5, 6];
 
-for (let i = 0; i < sayilar.length; i++) {
-  console.log (sayilar[i]);
-}
+// for (let i = 0; i < sayilar.length; i++) {
+//   console.log (sayilar[i]);
+// }
+
+// console.clear ();
+
+// let sayilar2 = [1, 2, 3, 5];
+
+// sayilar2.forEach ((sayi, i) => {
+//   console.log ('sayi: ' + sayi + ' index numarası: ' + i);
+// });
