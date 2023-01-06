@@ -63,3 +63,35 @@
 // sayilar2.forEach ((sayi, i) => {
 //   console.log ('sayi: ' + sayi + ' index numarası: ' + i);
 // });
+
+//ana kaynak bozulur
+const sayilar = [1, 2, 3, 4, 5, 6];
+
+// sayilar.map (sayi => {
+//   sayi *= 2;
+//   console.log (sayi);
+// });
+
+console.log ('Ana sayılar : ' + sayilar);
+
+const newSayilar = sayilar.map (sayi => {
+  return sayi * 2;
+});
+
+console.log ('Yeni sayılar: ' + newSayilar);
+
+const insanlar = [
+  {isim: 'Mehmet', yas: 32},
+  {isim: 'Ahmet', yas: 71},
+  {isim: 'Ali', yas: 19},
+  {isim: 'Kemal', yas: 45},
+];
+insanlar.map (i => {
+  console.log (i);
+});
+const a = insanlar.map (i => {
+  return i;
+  console.log (i);
+});
+
+console.log (a);
