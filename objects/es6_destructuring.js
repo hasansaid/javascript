@@ -1,5 +1,5 @@
 // //array destructuring
-// let isim = ['emre', 'altunbilek'];
+// let isim = ['ali', 'altunbilek'];
 // const ad = isim[0];
 // const soyad = isim[1];
 
@@ -19,8 +19,6 @@
 
 // console.log(t1,t2,t3,t4);
 
-
-
 // //object destructuring
 // let ayarlar = {
 //     //baslik: 'JS Harika',
@@ -37,7 +35,6 @@
 // //console.log(baslik, genislik, yukseklik);
 // console.log("***" + b, g, y);
 
-
 // const il = 'ankara';
 // const ilce = 'yenimahalle';
 
@@ -50,7 +47,7 @@
 // console.log(sehir2);
 
 // const person = {
-//     ad: 'emre',
+//     ad: 'ali',
 //     yas: 32,
 //     il: 'ankara',
 //     ilce: 'yenimahalle'
@@ -60,23 +57,22 @@
 // console.log(yas, geriKalanDegerler);
 
 let kisi = {
-    ad: {
-        firstName : "emre",
-        lastName : "altunbilek"
-    },
-    sevdigiRenkler: ["sarı", "kırmızı"],
-    yas:32
+  ad: {
+    firstName: 'ali',
+    lastName: 'altunbilek',
+  },
+  sevdigiRenkler: ['sarı', 'kırmızı'],
+  yas: 32,
 };
 
-const { ad: { firstName, lastName }, sevdigiRenkler: [renk1, renk2], yas } = kisi;
+const {ad: {firstName, lastName}, sevdigiRenkler: [renk1, renk2], yas} = kisi;
 
-console.log(firstName, lastName, renk1,renk2, yas);
+console.log (firstName, lastName, renk1, renk2, yas);
 
 // console.log(kisi.ad.firstName);
 // const { ad: { firstName, lastName } } = kisi;
 
 // console.log(firstName + " " + lastName);
-
 
 // console.log(kisi.sevdigiRenkler[0]);
 // //const sevdigiRenkler = kisi.sevdigiRenkler;

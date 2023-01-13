@@ -1,8 +1,8 @@
 //objects nedir, hatırlayalım
 
 //object literals
-/*const emre = {
-    ad: 'emre',
+/*const fatih = {
+    ad: 'fatih',
     yas: 32,
     evliMi : false,
     sevdigiRenkler: ['kırmızı', 'yeşil'],
@@ -13,19 +13,19 @@
     bilgileriSoyle: function () {
         return `benim adım ${this.ad} yasım ${this.yas}`;//template literal
     },
-    ['full-name']:'emre altunbilek',
+    ['full-name']:'fatih altunbilek',
 };
 
-console.log(emre.bilgileriSoyle());
+console.log(fatih.bilgileriSoyle());
 
-emre.yas = 35;
-emre.okul = 'ege üniversitesi';
-delete emre.okul;
+fatih.yas = 35;
+fatih.okul = 'ege üniversitesi';
+delete fatih.okul;
 
-console.log(emre);
+console.log(fatih);
 
 const hasan = {
-    ad: 'emre',
+    ad: 'fatih',
     yas: 32,
     evliMi : false,
     sevdigiRenkler: ['kırmızı', 'yeşil'],
@@ -36,7 +36,7 @@ const hasan = {
     bilgileriSoyle: function () {
         return `benim adım ${this.ad} yasım ${this.yas}`;//template literal
     },
-    ['full-name']:'emre altunbilek',
+    ['full-name']:'fatih altunbilek',
 };
 */
 
@@ -53,15 +53,13 @@ const hasan = {
 //         }
 //     };
 // }
-// const emre = createOgrenci('emre', 32, false, 'ege');
+// const fatih = createOgrenci('fatih', 32, false, 'ege');
 // const hasan = createOgrenci('hasan', 36, true, 'marmara');
 
-
-
-// console.log(emre.bilgileriGoster());
+// console.log(fatih.bilgileriGoster());
 // console.log(hasan.bilgileriGoster());
 
-// console.log(emre);
+// console.log(fatih);
 // console.log(hasan);
 
 //constuctor functions
@@ -82,10 +80,6 @@ const hasan = {
 // //3 this kelimesini o an olusturulan nesneye baglar.
 // const yunus = new Ogrenci('yunus', 30, false, 'itü');
 
-
-
-
-
 // //JSdeki tüm objeler onu olusturaln constructor fonksiyonuna erişebilir
 // // js ile beraber gelen built in contructor functionlar vardır
 // //diziler ve fonksiyonlar aslında objecttr demiştik, ispat?
@@ -105,62 +99,60 @@ const hasan = {
 // console.log(fonk.constructor);
 
 //Prototype Property
-//JS prototype miras modelini kullanır. 
+//JS prototype miras modelini kullanır.
 //Her constructor function/class aynı kurucu fonksiyonla olusturulan instance'ların ortak olarak kullanabiilecekleri prototype isimli propertye sahiptir.Prototype property de bir nesne döndürür.
 
-Ogrenci.prototype.okul = "ege üniversitesi";
+Ogrenci.prototype.okul = 'ege üniversitesi';
 Ogrenci.prototype.bilgileriGoster = function () {
-    return `ismim ${this.isim} yaşım ${this.yas} ve okulum ${this.okul}`;
+  return `ismim ${this.isim} yaşım ${this.yas} ve okulum ${this.okul}`;
 };
 Ogrenci.prototype.toString = function () {
-    return "ogrenci yazdıırılacak";
+  return 'ogrenci yazdıırılacak';
+};
+
+function Ogrenci (ad, yas, evliMi) {
+  this.isim = ad;
+  this.yas = yas;
+  this.evliMi = evliMi;
 }
 
+const fatih = new Ogrenci ('fatih', 32, false);
 
-function Ogrenci(ad, yas, evliMi) {
-    this.isim = ad;
-    this.yas = yas;
-    this.evliMi = evliMi;
-}
+const hasan = new Ogrenci ('hasan', 60, false);
 
-const emre = new Ogrenci('emre', 32, false);
+console.log (fatih.bilgileriGoster ());
+console.log (' **** ' + fatih);
+console.log (hasan.bilgileriGoster ());
 
-const hasan = new Ogrenci('hasan', 60, false);
-
-console.log(emre.bilgileriGoster());
-console.log(" **** "+emre);
-console.log(hasan.bilgileriGoster());
-
-console.log(emre.constructor.prototype);
-console.log(Object.getPrototypeOf(hasan));
+console.log (fatih.constructor.prototype);
+console.log (Object.getPrototypeOf (hasan));
 
 const dizi = [1, 2, 3];
 const dizi2 = [12, 22, 32];
-console.log(dizi.constructor.prototype);
-dizi.push(1);
+console.log (dizi.constructor.prototype);
+dizi.push (1);
 
+const isim = 'fatih';
+console.log (typeof isim);
+console.log (isim instanceof Object);
 
-const isim = 'emre';
-console.log(typeof isim);
-console.log(isim instanceof Object);
+console.log (isim.toUpperCase ());
+console.log (isim instanceof Object);
 
-console.log(isim.toUpperCase());
-console.log(isim instanceof Object);
+console.log (isim.constructor.prototype);
+console.log (isim.charAt (0));
 
-console.log(isim.constructor.prototype);
-console.log(isim.charAt(0));
-
-const renk = new String('kirmizi');
-console.log(typeof renk);
+const renk = new String ('kirmizi');
+console.log (typeof renk);
 
 const noo = 5;
-noo.ssss = "sadasd";
-console.log(noo.ssss);
-console.log(typeof noo);
-const dogumYili = new Number(1988);
-dogumYili.test = "asdasd";
-console.log(typeof dogumYili);
-console.log(dogumYili.test);
+noo.ssss = 'sadasd';
+console.log (noo.ssss);
+console.log (typeof noo);
+const dogumYili = new Number (1988);
+dogumYili.test = 'asdasd';
+console.log (typeof dogumYili);
+console.log (dogumYili.test);
 
-const sehirler = new Array('asd', 'asdasd', 'asdas');
-console.log(sehirler);
+const sehirler = new Array ('asd', 'asdasd', 'asdas');
+console.log (sehirler);
