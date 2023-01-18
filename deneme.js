@@ -72,26 +72,79 @@ const sayilar = [1, 2, 3, 4, 5, 6];
 //   console.log (sayi);
 // });
 
-console.log ('Ana sayılar : ' + sayilar);
+// console.log ('Ana sayılar : ' + sayilar);
 
-const newSayilar = sayilar.map (sayi => {
+// const newSayilar = sayilar.map (sayi => {
+//   return sayi * 2;
+// });
+
+// console.log ('Yeni sayılar: ' + newSayilar);
+
+// const insanlar = [
+//   {isim: 'Mehmet', yas: 32},
+//   {isim: 'Ahmet', yas: 71},
+//   {isim: 'Ali', yas: 19},
+//   {isim: 'Kemal', yas: 45},
+// ];
+// insanlar.map (i => {
+//   console.log (i);
+// });
+// const a = insanlar.map (i => {
+//   return i;
+//   console.log (i);
+// });
+
+// console.log (a);
+
+/*
+//c# dan kalan bilgilerle yaptığım yöntem..
+let myDizi = [1, 5, 7];
+const diziIslem = function (dizi, islem) {
+  let geciciDizi = [];
+  if (islem === 'carp') {
+    for (let i = 0; i < dizi.length; i++) {
+      geciciDizi[i] = dizi[i] * 2;
+    }
+    // return geciciDizi;
+    console.log (geciciDizi);
+  } else if (islem === 'bol') {
+    for (let i = 0; i < dizi.length; i++) {
+      geciciDizi[i] = dizi[i] / 2;
+    }
+    console.log (geciciDizi);
+  } else if (islem === 'ikiTopla') {
+    for (let i = 0; i < dizi.length; i++) {
+      geciciDizi[i] = dizi[i] + 2;
+    }
+    console.log (geciciDizi);
+  } else {
+    console.warn ('İŞLEM SEÇİMİ YAPMADINIZ!!!');
+  }
+};
+
+diziIslem (myDizi, 'carp');*/
+
+//js kursundan öğrendiğim yöntem..
+let myDizi = [1, 5, 7];
+
+const ikiIleCarp = function (sayi) {
   return sayi * 2;
-});
+};
 
-console.log ('Yeni sayılar: ' + newSayilar);
+const ikiIleBol = function (sayi) {
+  return sayi / 2;
+};
 
-const insanlar = [
-  {isim: 'Mehmet', yas: 32},
-  {isim: 'Ahmet', yas: 71},
-  {isim: 'Ali', yas: 19},
-  {isim: 'Kemal', yas: 45},
-];
-insanlar.map (i => {
-  console.log (i);
-});
-const a = insanlar.map (i => {
-  return i;
-  console.log (i);
-});
+const ikiIleTopla = function (sayi) {
+  return sayi + 2;
+};
 
-console.log (a);
+const diziIslemleri = function (dizi, islem) {
+  let geciciDizi = [];
+  for (let i = 0; i < dizi.length; i++) {
+    geciciDizi[i] = islem (dizi[i]);
+  }
+  console.log (geciciDizi);
+};
+
+diziIslemleri (myDizi, ikiIleBol);
