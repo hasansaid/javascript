@@ -65,7 +65,7 @@
 // });
 
 //ana kaynak bozulur
-const sayilar = [1, 2, 3, 4, 5, 6];
+// const sayilar = [1, 2, 3, 4, 5, 6];
 
 // sayilar.map (sayi => {
 //   sayi *= 2;
@@ -125,7 +125,7 @@ const diziIslem = function (dizi, islem) {
 diziIslem (myDizi, 'carp');*/
 
 //js kursundan öğrendiğim yöntem..
-let myDizi = [1, 5, 7];
+/*let myDizi = [1, 5, 7];
 
 const ikiIleCarp = function (sayi) {
   return sayi * 2;
@@ -147,4 +147,102 @@ const diziIslemleri = function (dizi, islem) {
   console.log (geciciDizi);
 };
 
-diziIslemleri (myDizi, ikiIleBol);
+diziIslemleri (myDizi, ikiIleBol);*/
+
+// let sayilar = [1, 2, 3, 4, 5];
+
+// sayilar.forEach (function (sayi, i) {
+//   console.log (sayi, i);
+// });
+//******************************* */
+// sayilar.forEach (ikiParametreAlanFonksiyon);
+
+// function ikiParametreAlanFonksiyon (sayi, i) {
+//   console.log (sayi, i);
+// }
+//******************************** */
+
+// function diziyiYazdır (dizi, callback) {
+//   for (let i = 0; i < dizi.length; i++) {
+//     callback (dizi[i], i);
+//   }
+// }
+
+// diziyiYazdır (sayilar, function (deger, index) {
+//   console.log ('DEGER: ' + deger + '--' + 'INDEX:' + index);
+// });
+
+/************************ */
+
+// const kisiler = [{ad: 'Said', soyad: 'SERTKAYA'}, {ad: 'Emre', soyad: 'GÜVEN'}];
+
+// const tamIsim = kisiler.map (kisi => kisi.ad + ' ' + kisi.soyad);
+
+// console.log (tamIsim);
+
+// const bitkiler = [
+//   {ad: 'elma', tur: 'meyve'},
+//   {ad: 'armut', tur: 'meyve'},
+//   {ad: 'domates', tur: 'sebze'},
+//   {ad: 'maydonoz', tur: 'sebze'},
+// ];
+/*********************************** */
+// const meyveler = bitkiler.filter (bitki => {
+//   return bitki.tur === 'meyve';
+// });
+
+// const sebzeler = bitkiler.filter (bitki => {
+//   return bitki.tur === 'sebze';
+// });
+
+// console.log (meyveler);
+// console.log (sebzeler);
+/*************************** */
+//GOOD FILTER
+
+// function kendiFiltreYapim (dizi, filtreSartlari) {
+//   const geciciDizi = [];
+//   for (let i = 0; i < dizi.length; i++) {
+//     const sonuc = filtreSartlari (dizi[i]);
+//     if (sonuc) {
+//       geciciDizi.push (dizi[i]);
+//     }
+//   }
+//   return geciciDizi;
+// }
+
+// function filter (bitki) {
+//   return bitki.tur === 'sebze';
+// }
+
+// const istenilen = kendiFiltreYapim (bitkiler, filter);
+// console.log (istenilen);
+
+// const kisiler = [
+//   {id: 1, ad: 'Ali'},
+//   {id: 2, ad: 'Emre'},
+//   {id: 3, ad: 'Fatma'},
+//   {id: 4, ad: 'Rıza'},
+// ];
+
+// const sonuc = kisiler.find (kisi => {
+//   return kisi.ad === 'Ali';
+// });
+
+// console.log (sonuc);
+
+// function kendiFindMetodum (kisiler, aranilanDeger) {
+//   let bulunanEleman = undefined;
+//   for (let i = 0; i < kisiler.length; i++) {
+//     if (aranilanDeger (kisiler[i])) {
+//       return kisiler[i];
+//     }
+//   }
+//   return bulunanEleman;
+// }
+
+// const sonuc = kendiFindMetodum (kisiler, function (kisi) {
+//   return kisi.id === 1;
+// });
+
+// console.log (sonuc);
