@@ -246,3 +246,31 @@ diziIslemleri (myDizi, ikiIleBol);*/
 // });
 
 // console.log (sonuc);
+
+// const sayilar = [1, 2, 3, 4, 5, 6];
+// const sonuc = sayilar.every (sayi => {
+//   return sayi < 10;
+// });
+
+// const sonucSome = sayilar.some (sayi => {
+//   return sayi > 5;
+// });
+
+// console.log (sonucSome);
+
+// console.log (sonuc);
+
+const sayilar = [1, 2, 3, 4, 5, 6];
+
+function toplamiBul () {
+  let toplam = 0;
+  for (let i = 0; sayilar.length; i++) {
+    toplam += sayilar[i];
+  }
+  console.log (toplam);
+}
+toplamiBul ();
+
+sayilar.reduce (function (pre, curr, index) {
+  console.log (pre, curr, index);
+}, 0);
