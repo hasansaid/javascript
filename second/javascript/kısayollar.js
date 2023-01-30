@@ -1,1 +1,0 @@
-var kısayollar = 1;

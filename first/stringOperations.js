@@ -32,7 +32,7 @@ console.log (bastanSonaSubstr);
 let yerDegistir = fullName.replace ('Jhon', 'j');
 console.log (yerDegistir);
 
-// concat : String birleştirme işlemi yapar.
+// concat : String birleştirme işlemi yapar. !!WARNING!!
 let allname = name.concat (' ', surname);
 console.log (allname);
 
