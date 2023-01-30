@@ -260,17 +260,17 @@ diziIslemleri (myDizi, ikiIleBol);*/
 
 // console.log (sonuc);
 
-const sayilar = [1, 2, 3, 4, 5, 6];
+// const sayilar = [1, 2, 3, 4, 5, 6];
 
-function toplamiBul () {
-  let toplam = 0;
-  for (let i = 0; sayilar.length; i++) {
-    toplam += sayilar[i];
-  }
-  console.log (toplam);
-}
-toplamiBul ();
+// function toplamiBul () {
+//   let toplam = 0;
+//   for (let i = 0; sayilar.length; i++) {
+//     toplam += sayilar[i];
+//   }
+//   console.log (toplam);
+// }
+// toplamiBul ();
 
-sayilar.reduce (function (pre, curr, index) {
-  console.log (pre, curr, index);
-}, 0);
+// sayilar.reduce (function (pre, curr, index) {
+//   console.log (pre, curr, index);
+// }, 0);
