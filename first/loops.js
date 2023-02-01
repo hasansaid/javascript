@@ -88,8 +88,7 @@ if (true) {
 }
 console.log ('Dış: ' + yas, isim);
 
-console.clear ();
-// Foreach - Callback
+// Callback
 const callbackFunction = callback => {
   let yas = 40;
   callback (yas);
@@ -97,3 +96,13 @@ const callbackFunction = callback => {
 callbackFunction (function (value) {
   console.log (value);
 });
+
+// Foreach
+let ogrencilerim = ['Hasan', 'Mustafa', 'Ali'];
+ogrencilerim.forEach ((kisi, index) => console.log (kisi, index));
+
+const ogrenci = (ogrenci, index) => {
+  let yazdır = `Öğrenci sırası: ${index + 1} - Öğrenci ismi: ${ogrenci}`;
+  console.log (yazdır);
+};
+ogrencilerim.forEach (ogrenci);
