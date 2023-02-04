@@ -1,6 +1,6 @@
 // EventListener , Listeye Eleman Ekleme Kaldırma
 
-const button = document.querySelector ('button');
+const button = document.querySelector ('.but22');
 // Butona tıklanma özelliği ekleme.
 // button.addEventListener ('click', () => {
 //   console.log ('tıklandı');
@@ -41,4 +41,28 @@ button.addEventListener ('click', () => {
 
   //sonuna ekleme
   ul.append (li);
+});
+
+// Mousemove -- Wheel
+const kutu = document.querySelector ('.kutu');
+kutu.addEventListener ('mousemove', e => {
+  //console.log (e);
+  //   console.log (e.offsetX, e.offsetY);
+  kutu.textContent = `X Koordinatı: ${e.offsetX} - Y Koordinatı: ${e.offsetY}`;
+});
+
+document.addEventListener ('wheel', e => {
+  //   console.log (e.pageX, e.pageY);
+});
+
+const tıkla = document.querySelector ('.but23');
+const mainPopup = document.querySelector ('.main-popup');
+const close = document.querySelector ('.popup-close');
+
+tıkla.addEventListener ('click', () => {
+  mainPopup.style.display = 'block';
+});
+
+close.addEventListener ('click', () => {
+  mainPopup.style.display = 'none';
 });
