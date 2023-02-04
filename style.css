@@ -1,0 +1,25 @@
+.sınıf {
+  padding: 9px;
+  color: red;
+  border: 1px dashed red;
+}
+
+.success {
+  padding: 9px;
+  color: green;
+  border: 1px dashed green;
+}
+
+.sırala {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+  max-width: 200px;
+  padding: 8px;
+  margin: 8px auto;
+  background-color: #eee;
+  border: 1px dashed white;
+}
